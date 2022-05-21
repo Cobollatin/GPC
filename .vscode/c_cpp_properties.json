@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                // "${vcpkgRoot}/x64-windows/include",
+                // "${vcpkgRoot}/x64-windows-static/include",
+                // "${vcpkgRoot}/x86-windows/include",
+                // "${vcpkgRoot}/x86-windows-static/include",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "compilerPath": "c:/ProgramData/chocolatey/bin/g++.exe",
+            "cStandard": "c17",
+            "intelliSenseMode": "${default}",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
