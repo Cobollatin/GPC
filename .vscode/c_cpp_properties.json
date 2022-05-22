@@ -8,7 +8,6 @@
                 // "${vcpkgRoot}/x86-windows/include",
                 // "${vcpkgRoot}/x86-windows-static/include",
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/solutions"
             ],
             "defines": [
                 "_DEBUG",
