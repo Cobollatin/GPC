@@ -262,3 +262,64 @@ void solve(){
     }
 }
 #endif
+
+#if MAGIC_PAIRS
+void solve(){
+    size_t T{0};
+    std::cin >> T;
+    for(size_t i{0}; i < T; ++i){
+        long long n{0};
+        std::cin >> n;
+        int d;
+        for(int j = 0; j < n; j++) std::cin >> d;
+        std::cout << n * (n - 1) / 2 << "\n";
+    }
+}
+#endif
+
+#if SINGLE_PUSH
+void solve(){
+    size_t t{0};
+    std::cin >> t;
+    while(t--){
+        long long n{0};
+        std::cin >> n;
+        std::vector<int> a(n);
+        for(long long i{0}; i < n; i++){
+            std::cin >> a[i];
+        }
+        std::vector<int> b(n);
+        for(long long i{0}; i < n; i++){
+            std::cin >> b[i];
+        }
+        long long r{- 1};
+        for(long long i{n - 1}; i >= 0; i--){
+            if(a[i] != b[i]){
+                r = i;
+                break;
+            }
+        }
+        long long l{-1};
+        for(long long i{0}; i < n; i++){
+            if(a[i] != b[i]){
+                l = i;
+                break;
+            }
+        }
+        bool asnswer{true};
+        if(l != -1 && r != -1){
+            int k = b[l] - a[l];
+            if(k <= 0) asnswer = false;
+            else {
+                for(long long i{l}; i <= r; i++){
+                    if(a[i] + k != b[i]){
+                        asnswer = false;
+                        break;
+                    }
+                }
+            }
+        }
+        std::cout << (asnswer ? "YES" : "NO") << '\n';
+    }
+}
+#endif

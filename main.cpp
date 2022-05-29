@@ -8,7 +8,9 @@
 #define CHEF_AND_SUBARRAY 0
 #define COUNT_SUBSTRING 0
 #define SUMMING_THE_N_SERIES 0
-#define HRML_PARSER 1
+#define HRML_PARSER 0
+#define MAGIC_PAIRS 0
+#define SINGLE_PUSH 1
 
 #include "solutions.hpp"
 
