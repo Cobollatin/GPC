@@ -5,6 +5,7 @@
 #include <sstream>
 #include <utility>
 #include <deque>
+#include <set>
 
 #if UPPERCASE_VS_LOWERCASE
 void solve(){
@@ -321,5 +322,19 @@ void solve(){
         }
         std::cout << (asnswer ? "YES" : "NO") << '\n';
     }
+}
+#endif
+
+#if IS_YOUR_HORSESHOE_ON_THE_OTHER_HOOF
+void solve(){
+    long long s1, s2, s3, s4;
+    std::cin >> s1 >> s2 >> s3 >> s4;
+    std::set<long long> colors;
+    colors.insert(s1);
+    colors.insert(s2);
+    colors.insert(s3);
+    colors.insert(s4);
+
+    std::cout << ( 4 - colors.size() ) << '\n';
 }
 #endif
