@@ -11,7 +11,8 @@
 #define HRML_PARSER 0
 #define MAGIC_PAIRS 0
 #define SINGLE_PUSH 0
-#define IS_YOUR_HORSESHOE_ON_THE_OTHER_HOOF 1
+#define IS_YOUR_HORSESHOE_ON_THE_OTHER_HOOF 0
+#define SORT_THE_ARRAY 1
 
 #include "solutions.hpp"
 

@@ -335,6 +335,55 @@ void solve(){
     colors.insert(s3);
     colors.insert(s4);
 
-    std::cout << ( 4 - colors.size() ) << '\n';
+    std::cout << (4 - colors.size()) << '\n';
+}
+#endif
+
+#if SORT_THE_ARRAY
+void solve(){
+    size_t n{0};
+    std::cin >> n;
+    long long start{0};
+    long long end{0};
+    long long best_start{0};
+    long long best_end{0};
+    size_t counter{1};
+    size_t best_counter{0};
+    std::cin >> start;
+    end = start;
+    for(size_t i{1}; i < n; i++){
+        long long temp{0};
+        std::cin >> temp;
+        if(start > temp){
+            end = temp;
+            counter++;
+            continue;
+        }
+        if(start < temp){
+            if(counter > best_counter){
+                best_counter = counter;
+                best_start = start;
+                best_end = end;
+            }
+            start = temp;
+            end = temp;
+            counter = 0;
+            continue;
+        }
+    }
+    if(counter > best_counter){
+        best_counter = counter;
+        best_start = start;
+        best_end = end;
+    }
+    std::cout << best_counter << '\n';
+    std::cout << best_start << ' ' << best_end << '\n';
+    if((long long)best_counter != best_start - best_end){
+        std::cout << "no\n";
+    }
+    // else{
+    //     std::cout << "yes" << '\n';
+    //     std::cout << best_end << ' ' << best_start << '\n';
+    // }
 }
 #endif
