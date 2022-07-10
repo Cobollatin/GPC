@@ -12,11 +12,13 @@
 #define MAGIC_PAIRS 0
 #define SINGLE_PUSH 0
 #define IS_YOUR_HORSESHOE_ON_THE_OTHER_HOOF 0
-#define SORT_THE_ARRAY 1
+#define SORT_THE_ARRAY 0
+#define DOMINO_PILING 1
 
 #include "solutions.hpp"
 
 // #include <bits/stdc++.h>
+// using namespace std;
 
 int main()
 {

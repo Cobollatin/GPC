@@ -3,10 +3,6 @@
         {
             "name": "Win32",
             "includePath": [
-                // "${vcpkgRoot}/x64-windows/include",
-                // "${vcpkgRoot}/x64-windows-static/include",
-                // "${vcpkgRoot}/x86-windows/include",
-                // "${vcpkgRoot}/x86-windows-static/include",
                 "${workspaceFolder}/**"
             ],
             "defines": [
@@ -15,10 +11,26 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "c:/ProgramData/chocolatey/bin/g++.exe",
-            "cStandard": "c17",
-            "intelliSenseMode": "${default}",
+            "compilerPath": "C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/g++.exe",
+            "intelliSenseMode": "windows-gcc-x64",
             "configurationProvider": "ms-vscode.cmake-tools",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "WSL",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/lib/cpp",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "cStandard": "c17",
             "cppStandard": "c++17"
         }
     ],

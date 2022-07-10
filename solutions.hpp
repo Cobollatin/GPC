@@ -387,3 +387,13 @@ void solve(){
     // }
 }
 #endif
+
+#if DOMINO_PILING
+void solve(){
+    size_t M, N;
+    std::cin >> M >> N;
+    
+    std::cout << (M * N) / 2;
+
+}
+#endif
