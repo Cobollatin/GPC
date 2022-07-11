@@ -6,6 +6,7 @@
 #include <utility>
 #include <deque>
 #include <set>
+#include <cmath>
 
 #if UPPERCASE_VS_LOWERCASE
 void solve(){
@@ -392,8 +393,18 @@ void solve(){
 void solve(){
     size_t M, N;
     std::cin >> M >> N;
-    
+
     std::cout << (M * N) / 2;
+
+}
+#endif
+
+#if GAME_WITH_STICKS
+void solve(){
+    size_t M, N;
+    std::cin >> M >> N;
+
+    std::cout << (std::min(M,N) % 2  ? "Malvika" : "Akshat");
 
 }
 #endif

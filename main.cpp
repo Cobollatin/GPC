@@ -13,7 +13,8 @@
 #define SINGLE_PUSH 0
 #define IS_YOUR_HORSESHOE_ON_THE_OTHER_HOOF 0
 #define SORT_THE_ARRAY 0
-#define DOMINO_PILING 1
+#define DOMINO_PILING 0
+#define GAME_WITH_STICKS 1
 
 #include "solutions.hpp"
 
